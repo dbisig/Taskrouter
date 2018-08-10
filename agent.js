@@ -93,8 +93,8 @@ function logger(message) {
   var log = document.getElementById('log');
 
   var d = new Date();
-  var tstamp = d.getDate() + "." + (d.getMonth()+1) + "." + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ": ";
-  log.value += "\n> " + tstamp + message;  
+  var tstamp = d.getDate() + "." + (d.getMonth()+1) + "." + d.getFullYear() + " " + d.getHours() + ":" + (d.getMinutes() < 10 ? '0' : '') + d.getMinutes() + ": ";
+  log.value += "\n> " + tstamp + message;
   log.scrollTop = log.scrollHeight;
 }
 
