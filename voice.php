@@ -1,6 +1,6 @@
 <?php
 include('./vendor/autoload.php');
-include('./config.php');
+include('./api-creds.php');
 
 use Twilio\Twiml;
 // the same as: use Twilio\Twiml as Twiml;
